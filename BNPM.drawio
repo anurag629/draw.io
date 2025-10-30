@@ -1,0 +1,144 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36" version="28.2.8">
+  <diagram name="ADIB ATM Fraud Detection and Response" id="qc7wOXTHufMkSEl5pJ8R">
+    <mxGraphModel dx="1426" dy="791" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="uxfHWdnuB49CnT9llUej-1" value="Customer" style="swimlane;horizontal=0;startSize=30;rounded=1;fillColor=#F8F8F8;strokeColor=#999999;fontSize=14" parent="1" vertex="1">
+          <mxGeometry x="171" y="101" width="370" height="1400" as="geometry" />
+        </mxCell>
+        <mxCell id="uxfHWdnuB49CnT9llUej-2" value="" style="shape=mxgraph.bpmn.startEvent;html=1;" parent="uxfHWdnuB49CnT9llUej-1" vertex="1">
+          <mxGeometry x="40" y="60" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="uxfHWdnuB49CnT9llUej-3" value="Initiate Transaction" style="shape=mxgraph.bpmn.task;html=1;rounded=1;" parent="uxfHWdnuB49CnT9llUej-1" vertex="1">
+          <mxGeometry x="139" y="50" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uxfHWdnuB49CnT9llUej-4" value="Receive Fraud Alert Notification" style="shape=mxgraph.bpmn.task;html=1;rounded=1;" parent="uxfHWdnuB49CnT9llUej-1" vertex="1">
+          <mxGeometry x="228" y="1066" width="220" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="uxfHWdnuB49CnT9llUej-5" value="" style="shape=mxgraph.bpmn.endEvent;html=1;" parent="uxfHWdnuB49CnT9llUej-1" vertex="1">
+          <mxGeometry x="60" y="1250" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="uxfHWdnuB49CnT9llUej-6" style="endArrow=block;endFill=1;edgeStyle=elbowEdgeStyle;elbow=horizontal;rounded=1;" parent="uxfHWdnuB49CnT9llUej-1" source="uxfHWdnuB49CnT9llUej-2" target="uxfHWdnuB49CnT9llUej-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uxfHWdnuB49CnT9llUej-7" value="ADIB ATM System" style="swimlane;horizontal=0;startSize=30;rounded=1;fillColor=#F8F8F8;strokeColor=#999999;fontSize=14" parent="1" vertex="1">
+          <mxGeometry x="600" width="590" height="1400" as="geometry" />
+        </mxCell>
+        <mxCell id="uxfHWdnuB49CnT9llUej-8" value="Validate Card &amp; PIN" style="shape=mxgraph.bpmn.task;html=1;rounded=1;" parent="uxfHWdnuB49CnT9llUej-7" vertex="1">
+          <mxGeometry x="660" y="100" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uxfHWdnuB49CnT9llUej-9" value="Check Account Status" style="shape=mxgraph.bpmn.task;html=1;rounded=1;" parent="uxfHWdnuB49CnT9llUej-7" vertex="1">
+          <mxGeometry x="660" y="200" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uxfHWdnuB49CnT9llUej-12" value="Process Transaction Normally" style="shape=mxgraph.bpmn.task;html=1;rounded=1;" parent="uxfHWdnuB49CnT9llUej-7" vertex="1">
+          <mxGeometry x="640" y="520" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uxfHWdnuB49CnT9llUej-18" value="External Fraud Detection Service" style="swimlane;horizontal=0;startSize=30;rounded=1;fillColor=#F8F8F8;strokeColor=#999999;fontSize=14" parent="1" vertex="1">
+          <mxGeometry x="1200" width="590" height="1400" as="geometry" />
+        </mxCell>
+        <mxCell id="uxfHWdnuB49CnT9llUej-19" value="Analyze Transaction Data" style="shape=mxgraph.bpmn.task;html=1;rounded=1;" parent="uxfHWdnuB49CnT9llUej-18" vertex="1">
+          <mxGeometry x="1260" y="420" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uxfHWdnuB49CnT9llUej-20" value="Generate Fraud Risk Score" style="shape=mxgraph.bpmn.task;html=1;rounded=1;" parent="uxfHWdnuB49CnT9llUej-18" vertex="1">
+          <mxGeometry x="1260" y="520" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uxfHWdnuB49CnT9llUej-21" value="Return Risk Score to ADIB System" style="shape=mxgraph.bpmn.task;html=1;rounded=1;" parent="uxfHWdnuB49CnT9llUej-18" vertex="1">
+          <mxGeometry x="1240" y="620" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uxfHWdnuB49CnT9llUej-14" value="Block Transaction" style="shape=mxgraph.bpmn.task;html=1;rounded=1;" parent="uxfHWdnuB49CnT9llUej-18" vertex="1">
+          <mxGeometry x="48" y="837" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uxfHWdnuB49CnT9llUej-16" value="Approve Transaction" style="shape=mxgraph.bpmn.task;html=1;rounded=1;" parent="uxfHWdnuB49CnT9llUej-18" vertex="1">
+          <mxGeometry x="340" y="760" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uxfHWdnuB49CnT9llUej-13" value="Risk Score High?" style="shape=mxgraph.bpmn.gateway;html=1;gateway=exclusive;" parent="uxfHWdnuB49CnT9llUej-18" vertex="1">
+          <mxGeometry x="137" y="620" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="uxfHWdnuB49CnT9llUej-34" style="endArrow=block;endFill=1;edgeStyle=elbowEdgeStyle;elbow=horizontal;rounded=1;" parent="uxfHWdnuB49CnT9llUej-18" source="uxfHWdnuB49CnT9llUej-21" target="uxfHWdnuB49CnT9llUej-13" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uxfHWdnuB49CnT9llUej-35" style="endArrow=block;endFill=1;edgeStyle=elbowEdgeStyle;elbow=horizontal;rounded=1;" parent="uxfHWdnuB49CnT9llUej-18" source="uxfHWdnuB49CnT9llUej-13" target="uxfHWdnuB49CnT9llUej-14" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uxfHWdnuB49CnT9llUej-36" style="endArrow=block;endFill=1;edgeStyle=elbowEdgeStyle;elbow=horizontal;rounded=1;" parent="uxfHWdnuB49CnT9llUej-18" source="uxfHWdnuB49CnT9llUej-13" target="uxfHWdnuB49CnT9llUej-16" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uxfHWdnuB49CnT9llUej-17" value="Dispense Cash" style="shape=mxgraph.bpmn.task;html=1;rounded=1;" parent="uxfHWdnuB49CnT9llUej-18" vertex="1">
+          <mxGeometry x="224" y="1071" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uxfHWdnuB49CnT9llUej-40" style="endArrow=block;endFill=1;edgeStyle=elbowEdgeStyle;elbow=horizontal;rounded=1;" parent="uxfHWdnuB49CnT9llUej-18" source="uxfHWdnuB49CnT9llUej-15" target="uxfHWdnuB49CnT9llUej-17" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uxfHWdnuB49CnT9llUej-37" style="endArrow=block;endFill=1;edgeStyle=elbowEdgeStyle;elbow=horizontal;rounded=1;" parent="uxfHWdnuB49CnT9llUej-18" source="uxfHWdnuB49CnT9llUej-14" target="uxfHWdnuB49CnT9llUej-15" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LNjeAYT87KEBrPCawuvU-1" value="" style="endArrow=block;endFill=1;edgeStyle=elbowEdgeStyle;elbow=horizontal;rounded=1;" parent="uxfHWdnuB49CnT9llUej-18" source="uxfHWdnuB49CnT9llUej-16" target="uxfHWdnuB49CnT9llUej-15" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1540" y="790" as="sourcePoint" />
+            <mxPoint x="1433" y="1079" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uxfHWdnuB49CnT9llUej-15" value="Alert Operations Department" style="shape=mxgraph.bpmn.task;html=1;rounded=1;" parent="uxfHWdnuB49CnT9llUej-18" vertex="1">
+          <mxGeometry x="197" y="942" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uxfHWdnuB49CnT9llUej-11" value="Send Data to External Fraud Detection Service" style="shape=mxgraph.bpmn.task;html=1;rounded=1;" parent="uxfHWdnuB49CnT9llUej-18" vertex="1">
+          <mxGeometry x="242" y="407" width="320" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="uxfHWdnuB49CnT9llUej-31" style="endArrow=block;endFill=1;edgeStyle=elbowEdgeStyle;elbow=horizontal;rounded=1;" parent="uxfHWdnuB49CnT9llUej-18" source="uxfHWdnuB49CnT9llUej-11" target="uxfHWdnuB49CnT9llUej-19" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uxfHWdnuB49CnT9llUej-10" value="Suspicious Activity?" style="shape=mxgraph.bpmn.gateway;html=1;gateway=exclusive;" parent="uxfHWdnuB49CnT9llUej-18" vertex="1">
+          <mxGeometry x="110" y="300" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="uxfHWdnuB49CnT9llUej-29" style="endArrow=block;endFill=1;edgeStyle=elbowEdgeStyle;elbow=horizontal;rounded=1;" parent="uxfHWdnuB49CnT9llUej-18" source="uxfHWdnuB49CnT9llUej-10" target="uxfHWdnuB49CnT9llUej-11" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uxfHWdnuB49CnT9llUej-22" value="Operations &amp; Customer Service" style="swimlane;horizontal=0;startSize=30;rounded=1;fillColor=#F8F8F8;strokeColor=#999999;fontSize=14" parent="1" vertex="1">
+          <mxGeometry x="1800" width="590" height="1400" as="geometry" />
+        </mxCell>
+        <mxCell id="uxfHWdnuB49CnT9llUej-26" style="endArrow=block;endFill=1;edgeStyle=elbowEdgeStyle;elbow=horizontal;rounded=1;" parent="1" source="uxfHWdnuB49CnT9llUej-3" target="uxfHWdnuB49CnT9llUej-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uxfHWdnuB49CnT9llUej-27" style="endArrow=block;endFill=1;edgeStyle=elbowEdgeStyle;elbow=horizontal;rounded=1;" parent="1" source="uxfHWdnuB49CnT9llUej-8" target="uxfHWdnuB49CnT9llUej-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uxfHWdnuB49CnT9llUej-28" style="endArrow=block;endFill=1;edgeStyle=elbowEdgeStyle;elbow=horizontal;rounded=1;" parent="1" source="uxfHWdnuB49CnT9llUej-9" target="uxfHWdnuB49CnT9llUej-10" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uxfHWdnuB49CnT9llUej-30" style="endArrow=block;endFill=1;edgeStyle=elbowEdgeStyle;elbow=horizontal;rounded=1;" parent="1" source="uxfHWdnuB49CnT9llUej-10" target="uxfHWdnuB49CnT9llUej-12" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uxfHWdnuB49CnT9llUej-32" style="endArrow=block;endFill=1;edgeStyle=elbowEdgeStyle;elbow=horizontal;rounded=1;" parent="1" source="uxfHWdnuB49CnT9llUej-19" target="uxfHWdnuB49CnT9llUej-20" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uxfHWdnuB49CnT9llUej-33" style="endArrow=block;endFill=1;edgeStyle=elbowEdgeStyle;elbow=horizontal;rounded=1;" parent="1" source="uxfHWdnuB49CnT9llUej-20" target="uxfHWdnuB49CnT9llUej-21" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uxfHWdnuB49CnT9llUej-38" style="endArrow=block;endFill=1;edgeStyle=elbowEdgeStyle;elbow=horizontal;rounded=1;" parent="1" source="uxfHWdnuB49CnT9llUej-15" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2971" y="930" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uxfHWdnuB49CnT9llUej-39" style="endArrow=block;endFill=1;edgeStyle=elbowEdgeStyle;elbow=horizontal;rounded=1;" parent="1" source="uxfHWdnuB49CnT9llUej-23" target="uxfHWdnuB49CnT9llUej-24" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uxfHWdnuB49CnT9llUej-41" style="endArrow=block;endFill=1;edgeStyle=elbowEdgeStyle;elbow=horizontal;rounded=1;" parent="1" source="uxfHWdnuB49CnT9llUej-17" target="uxfHWdnuB49CnT9llUej-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uxfHWdnuB49CnT9llUej-42" style="endArrow=block;endFill=1;edgeStyle=elbowEdgeStyle;elbow=horizontal;rounded=1;" parent="1" source="uxfHWdnuB49CnT9llUej-4" target="uxfHWdnuB49CnT9llUej-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uxfHWdnuB49CnT9llUej-25" value="Performance Insights:\n• Avg cycle time ≈ 40 min (incl. review)\n• Total FTE ≈ 3.85 / year\n• Automation reduces manual load." style="shape=note;whiteSpace=wrap;rounded=1;size=14;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="2946" y="108" width="330" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="uxfHWdnuB49CnT9llUej-23" value="Review Alert" style="shape=mxgraph.bpmn.task;html=1;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="2981" y="895" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uxfHWdnuB49CnT9llUej-24" value="Decide Next Action (Block Card / Notify Customer)" style="shape=mxgraph.bpmn.task;html=1;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="2918" y="1028" width="320" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
